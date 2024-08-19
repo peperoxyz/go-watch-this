@@ -69,6 +69,8 @@ function createMovieCard(movie) {
     `;
 
 	movieCard.addEventListener("click", () => {
+		const warningContainerEl = document.getElementById("warning-container");
+		warningContainerEl.style.display = "none";
 		selectedCardImage = movieCard.children[0].attributes[0].value;
 		moviePosterImageEl.src = selectedCardImage;
 		bentoPosterContainerEl.append(moviePosterImageEl);

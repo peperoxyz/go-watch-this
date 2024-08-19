@@ -2,6 +2,10 @@ body {
 	font-family: "Jost";
 }
 
+input {
+	font-size: 6rem;
+}
+
 .bg-dark {
 	background-color: rgb(36, 70, 54);
 	background-image: linear-gradient(-20deg, rgb(36, 70, 54) 0%, rgb(14, 8, 57) 100%);
@@ -167,6 +171,10 @@ body {
 	position: relative;
 }
 
+.absolute {
+	position: absolute;
+}
+
 .hidden {
 	display: none;
 }
@@ -230,6 +238,13 @@ body {
 	border-radius: 10px;
 }
 
+.warning-container {
+	width: 96%;
+	height: 45rem;
+	margin-top: 2rem;
+	border-radius: 1rem;
+}
+
 .item-1 {
 	grid-column: 2 / 4;
 	grid-row: 1 / 2;
@@ -273,6 +288,9 @@ body {
 
 /* Mobile View */
 @media screen and (min-width: 250px) and (max-width: 480px) {
+	.bento {
+		display: none;
+	}
 	.movie-list-container {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -280,10 +298,14 @@ body {
 
 /* Tablet View */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+	.bento {
+		display: none;
+	}
 	.movie-list-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+
 /* Laptop View */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.movie-list-container {
