@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- css and js-->
+		<link rel="stylesheet" href="/src/css/resetter.css" />
+		<link rel="stylesheet" href="/src/css/style.css" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+		</style>
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+		<title>Assignment - 2 | GoWatchThis!</title>
+	</head>
+	<body class="bg-dark">
+		<!-- movie list -->
+		<main class="flex justify-center text-white">
+			<section class="movie-list">
+				<div class="flex mt-2 items-center text-lg gap-1" style="margin-left: 1.5rem">
+					<i class="bx bxs-hot bx-tada" style="color: #fbfbfb"></i>
+					<span class="text-white font-jost">Trending</span>
+				</div>
+				<div id="movie-list-container" style="flex: 1" class="movie-list-container p-3 flex gap-1 grid grid-x-4 text-white">
+					<!-- child will be appended by javascript DOM -->
+				</div>
+			</section>
+			<section class="bento p-3">
+				<div class="mt-2 bento-header">
+					<div class="flex gap-1 items-center" style="padding-top: 1.5rem">
+						<i class="bx bxs-movie-play text-xl" style="color: #fbfbfb"></i>
+						<div>
+							<h1 class="text-3xl text-neon">Go Watch This!</h1>
+						</div>
+					</div>
+					<p class="text-l text-white mt-1">Recommend a movie but make it fun ~</p>
+				</div>
+				<!-- survey question container goes heare -->
+				<div class="bento-container text-bluelagoon">
+					<div id="bento-item poster" class="poster">
+						<img src="" alt="Movie Poster" id="movie-poster" />
+					</div>
+					<div id="bento-item-1" class="bento-item item-1 p-3">
+						<div class="flex justify-between items-center">
+							<span class="text-l font-semibold">Thoughts</span>
+							<span class="">Personal</span>
+						</div>
+
+						<div class="divider"></div>
+						<div id="bento-value-1" class="bento-value flex text-md font-semibold items-center mt-1" style="padding: 10px">
+							<div id="thought-question" class="question" style="width: 100%">
+								<textarea cols="60" rows="5" id="thoughts-input" style="width: 100%"></textarea> <br />
+								<button type="submit" id="thoughts-btn" >Send</button>
+							</div>
+						</div>
+					</div>
+					<div id="bento-item-2" class="bento-item item-2 p-3">
+						<div class="flex justify-between items-center">
+							<span class="text-l font-semibold">Stars</span>
+							<span class="">?/5</span>
+						</div>
+						<div class="divider"></div>
+						<div id="bento-value-2" class="bento-value text-md font-semibold items-center p-1">
+							<!-- stars -->
+							<div id="stars-question" class="question" >
+								<textarea cols="60" rows="5" id="stars-input" style="width: 100%"></textarea> <br />
+								<button type="submit" id="stars-btn" >Send</button>
+							</div>
+							<!-- stars end -->
+						</div>
+					</div>
+					<div id="bento-item-3" class="bento-item item-3 p-3">
+						<div class="flex justify-between items-center">
+							<span class="text-l font-semibold">Fans Vote</span>
+							<span class=""></span>
+						</div>
+						<div class="divider"></div>
+						<div id="bento-value-3" class="bento-value items-center justify-center flex text-md font-semibold items-center p-1"></div>
+					</div>
+					<div id="bento-item-4" class="bento-item item-4 p-3">
+						<div class="flex justify-between items-center">
+							<span class="text-l font-semibold">Overview</span>
+							<span class="">Synopsis</span>
+						</div>
+						<div class="divider"></div>
+						<div id="bento-value-4" class="bento-value text-md items-center p-1"></div>
+					</div>
+					<div id="bento-item-5" class="bento-item item-5 p-3">
+						<div class="flex justify-between items-center">
+							<span class="text-l font-semibold">Movie</span>
+							<span class="">Info</span>
+						</div>
+						<div class="divider"></div>
+						<div id="bento-value-5" class="bento-value text-md font-semibold items-center flex items-center"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- javascript -->
+		<script src="/src/js/script.js"></script>
+	</body>
+</html>
