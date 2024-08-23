@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://pbs.twimg.com/media/GUjB6tmakAAf04U?format=jpg&name=large)
+![](https://raw.githubusercontent.com/peperoxyz/go-watch-this/master/B7-D6.png)
 
 ### Links
 
--   Solution URL: [Github Repo](https://github.com/peperoxyz/glassy-biolinks)
--   Live Site URL: [Live Site](https://glassy-biolinks.netlify.app/)
+-   Solution URL: [Github Repo](https://github.com/peperoxyz/go-watch-this)
+-   Live Site URL: [Live Site](https://fj5y88.csb.app/)
 
 ## My Process
 
