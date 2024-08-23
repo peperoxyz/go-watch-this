@@ -23,7 +23,7 @@ const thoughtsQuestionEl = document.getElementById("thought-question");
 const buttonSendThoughts = document.getElementById("thoughts-btn");
 const thoughtsInputEl = document.getElementById("thoughts-input");
 
-// thoughts item selector
+// stars item selector
 const starsQuestionEl = document.getElementById("stars-question");
 const buttonSendStars = document.getElementById("stars-btn");
 const starsInputEl = document.getElementById("stars-input");
