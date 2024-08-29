@@ -16,8 +16,8 @@
 	</head>
 	<body class="bg-dark">
 		<!-- movie list -->
-		<main class="flex justify-center text-white">
-			<section class="movie-list">
+		<main class="justify-center text-white relative">
+			<section id="movie-list" class="movie-list">
 				<div class="flex mt-2 items-center text-md gap-1" style="margin-left: 1.5rem">
 					<i class="bx bxs-hot bx-tada" style="color: #fbfbfb"></i>
 					<span class="text-white font-jost">Trending</span>
@@ -27,24 +27,27 @@
 				</div>
 			</section>
 
-			<section class="bento p-3 relative">
-				<div class="mt-2 bento-header">
-					<div class="flex gap-1 items-center" style="padding-top: 1.5rem">
-						<i class="bx bxs-movie-play text-xl" style="color: #fbfbfb"></i>
-						<div>
-							<h1 class="text-3xl text-neon">Go Watch This!</h1>
+			<section id="bentoSection" class="bento top-0 w-full hidden absolute">
+				<div class="bento-header-wrapper">
+					<div class="mt-2 bento-header">
+						<div class="flex gap-1 items-center" style="padding-top: 1.5rem">
+							<i class="bx bxs-movie-play text-xl" style="color: #fbfbfb"></i>
+							<div>
+								<h1 class="text-3xl text-neon">Go Watch This!</h1>
+							</div>
 						</div>
+						<p class="text-l text-white mt-1">Recommend a movie but make it fun ~</p>
 					</div>
-					<p class="text-l text-white mt-1">Recommend a movie but make it fun ~</p>
+					<div id="close-bento" class="bento-header" style="padding-top: 2rem; font-size: 5rem">x</div>
 				</div>
 				<!-- warning -->
-				<div id="warning-container" class="warning-container absolute bg-dark flex justify-center items-center text-l text-neon" >
+				<div id="warning-container" class="warning-container absolute bg-dark flex justify-center items-center text-l text-neon">
 					<h2>Please select a movie before giving a rating!</h2>
 				</div>
 				<!-- survey question container goes heare -->
 				<div class="bento-container text-bluelagoon">
 					<div id="bento-item poster" class="poster">
-						<img src=""  id="movie-poster" />
+						<img src="" id="movie-poster" />
 					</div>
 					<div id="bento-item-1" class="bento-item item-1 p-3">
 						<div class="flex justify-between items-center">

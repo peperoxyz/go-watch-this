@@ -59,18 +59,31 @@ async function fetchMovies() {
 }
 
 function createMovieCard(movie) {
+	const bentoSection = document.getElementById("bentoSection");
 	const { title, name, poster_path } = movie;
 	const movieCard = document.createElement("div");
 	movieCard.classList.add("movie-card-item");
 
 	movieCard.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="rounded-lg w-2 /">
-        
+        <img  src="https://image.tmdb.org/t/p/w500/${poster_path}" class="rounded-lg w-4 id="img-movie" /">
+        <h1 class="mt-1" >${title}</h1>
     `;
 
 	movieCard.addEventListener("click", () => {
 		const warningContainerEl = document.getElementById("warning-container");
+		const movieListEl = document.getElementById("movie-list");
 		warningContainerEl.style.display = "none";
+		bentoSection.style.display = "block";
+
+		// movieListEl.style.webkitFilter = "blur(8px);";
+		movieListEl.style.filter = "blur(8px)";
+
+		const closeButtonEl = document.getElementById("close-bento");
+		closeButtonEl.addEventListener("click", () => {
+			bentoSection.style.display = "none";
+			movieListEl.style.filter = "blur(0)";
+		});
+
 		selectedCardImage = movieCard.children[0].attributes[0].value;
 		moviePosterImageEl.src = selectedCardImage;
 		bentoPosterContainerEl.append(moviePosterImageEl);
